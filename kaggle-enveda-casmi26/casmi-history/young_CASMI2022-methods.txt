@@ -1,0 +1,7 @@
+Scope:
+
+Due to time considerations, my submission is only partially completed. I focused on the positive mode data in the priority challenge (131 compounds total). I also did not provide any compound class annotations.
+
+Methods:
+
+I started with the MSP files provided by the contest organizers. I used an internal version of my mass spectrum predictor, MassFormer (see this preprint for details: https://arxiv.org/abs/2111.04824). The method is trained on spectrum data from NIST 2020, and uses a graph transformer architecture (https://arxiv.org/abs/2106.05234) to make spectrum predictions based on the 2D molecular graph input. The predictions can be conditioned on collision energy and precursor adduct. Additionally, the model is pretrained on DFT-calculated HOMO-LUMO data from the PubChemQC project (PCQM4Mv2, https://ogb.stanford.edu/docs/lsc/pcqm4mv2/). Since the adduct information was not provided with the CASMI spectra, 6 common adducts were considered For each adduct, the mass of the (uncharged) precursor was calculated and then used to query PubChem for candidate structures (at a mass tolerance of 10 ppm). The predicted spectrum with the highest cosine similarity to the target spectrum was chosen as the match, and used to determine adduct, mass formula, and 2D structure.

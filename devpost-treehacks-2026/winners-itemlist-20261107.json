@@ -1,0 +1,396 @@
+[
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Shepherd",
+  "url": "https://devpost.com/software/raising-cane",
+  "award": [
+   "Winner, Treehacks Grand Prize (1st) — TreeHacks 2026",
+   "Winner, [OpenEvidence] Healthcare Track Grand Prize — TreeHacks 2026",
+   "Winner, [OpenEvidence] Best Use of Clinical Information (4x Apple Watches) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Robosurge",
+  "url": "https://devpost.com/software/we-use-nix",
+  "award": [
+   "Winner,  Treehacks Grand Prize (2nd) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "ChromaChord",
+  "url": "https://devpost.com/software/chromachord",
+  "award": [
+   "Winner,  Treehacks Grand Prize (3rd) — TreeHacks 2026",
+   "Winner, [Suno] Best Musical Hack — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "diffuji",
+  "url": "https://devpost.com/software/diffuji",
+  "award": [
+   "Winner, Most Creative — TreeHacks 2026",
+   "Winner, [Neo] Most Likely to Become a Product — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Mira",
+  "url": "https://devpost.com/software/mira-w65b0a",
+  "award": [
+   "Winner, Most Impactful — TreeHacks 2026",
+   "Winner, [OpenAI] Artificial Intelligence Track ([1st]  Lunch with OpenAI engineers at the office + 1 year of ChatGPT Pro  [2nd] 1 year of ChatGPT Pro  [3rd] OpenAI swag) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Freak in the Sheets",
+  "url": "https://devpost.com/software/freak-in-the-sheets-7jl542",
+  "award": [
+   "Winner, Most Technically Complex — TreeHacks 2026",
+   "Winner, [Human Capital] Human Capital Fellowship Prize ( $50k equity-free check per team member (up to $200k total)) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Sentinel",
+  "url": "https://devpost.com/software/sentinel-c8ki50",
+  "award": [
+   "Winner, Best Hardware Hack — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "HeartStart",
+  "url": "https://devpost.com/software/heartstart",
+  "award": [
+   "Winner, Best Beginner Hack — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "VisionOS",
+  "url": "https://devpost.com/software/visionos-5euxo7",
+  "award": [
+   "Winner, [OpenAI] Artificial Intelligence Track ([1st]  Lunch with OpenAI engineers at the office + 1 year of ChatGPT Pro  [2nd] 1 year of ChatGPT Pro  [3rd] OpenAI swag) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "ContainOS",
+  "url": "https://devpost.com/software/containos",
+  "award": [
+   "Winner, [OpenAI] Artificial Intelligence Track ([1st]  Lunch with OpenAI engineers at the office + 1 year of ChatGPT Pro  [2nd] 1 year of ChatGPT Pro  [3rd] OpenAI swag) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "ShadowGuard",
+  "url": "https://devpost.com/software/shadowguard-l6yv7p",
+  "award": [
+   "Winner, [OpenEvidence] Healthcare Track Grand Prize — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Project Lend",
+  "url": "https://devpost.com/software/project-lend",
+  "award": [
+   "Winner, [Anthropic] Human Flourishing Track (1st Place: 4 tungsten cubes   2nd Place: 1 year of Claude Pro   3rd Place: 6 months of Claude Pro) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Tribune",
+  "url": "https://devpost.com/software/tribune",
+  "award": [
+   "Winner, [Anthropic] Human Flourishing Track (1st Place: 4 tungsten cubes   2nd Place: 1 year of Claude Pro   3rd Place: 6 months of Claude Pro) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Bloom",
+  "url": "https://devpost.com/software/bloom-dvjpea",
+  "award": [
+   "Winner, [Anthropic] Human Flourishing Track (1st Place: 4 tungsten cubes   2nd Place: 1 year of Claude Pro   3rd Place: 6 months of Claude Pro) — TreeHacks 2026",
+   "Winner, [Decagon] Best Conversation Assistant (Nintendo Switch 2  Mario Kart World Bundle Guaranteed onsite interviews for internship) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Mirage",
+  "url": "https://devpost.com/software/synsplatt",
+  "award": [
+   "Winner, [Modal] Inference Track (Inference Track Grand Prize: $5K in Modal Credits per person, paid visit (flight & hotel) to SF or NY Office with lunch with Modal team,.   Inference Track Runner Up Prize:  $1K in Modal credits, airpods for each team member.) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "ShotSpot",
+  "url": "https://devpost.com/software/shotspot-kfvp1n",
+  "award": [
+   "Winner, [Modal] Inference Track (Inference Track Grand Prize: $5K in Modal Credits per person, paid visit (flight & hotel) to SF or NY Office with lunch with Modal team,.   Inference Track Runner Up Prize:  $1K in Modal credits, airpods for each team member.) — TreeHacks 2026",
+   "Winner, [Bright Data] Best AI-Powered Web Data Hack ($500 Cash + $1.5k Credits [1st] & $350 Cash + $1K Credits [2nd] & $250 Cash + $500 Credits [3rd]) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "jiggle wiggle",
+  "url": "https://devpost.com/software/jiggle-wiggle",
+  "award": [
+   "Winner, [Modal] Inference Track (Inference Track Grand Prize: $5K in Modal Credits per person, paid visit (flight & hotel) to SF or NY Office with lunch with Modal team,.   Inference Track Runner Up Prize:  $1K in Modal credits, airpods for each team member.) — TreeHacks 2026",
+   "Winner, [Zoom x Render] Best use of Zoom APIs + Render: (Bose Headphones x 4 Zoom Ocean Bottle x 4$2000 Render Credits) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "GridVeda",
+  "url": "https://devpost.com/software/gridveda",
+  "award": [
+   "Winner, [Stanford Ecopreneurship] Sustainability: Best prototyping process — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Morro",
+  "url": "https://devpost.com/software/morro",
+  "award": [
+   "Winner, [Stanford Ecopreneurship] Sustainability: Best incorporation of broader context (e.g. regulatory, competitive landscape) to improve venture viability — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Mobius: the first AI Agent to build a billion dollar company",
+  "url": "https://devpost.com/software/mobius-the-first-ai-agent-to-build-a-unicorn",
+  "award": [
+   "Winner, [Y Combinator] Build an Iconic YC Company with AI (1st Place: Guaranteed YC interview  2nd Place: Guaranteed YC Office Hours  3rd Place: Guaranteed YC Office Hours) — TreeHacks 2026",
+   "Winner, [Modal] Sandbox Challenge — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "TradeProof",
+  "url": "https://devpost.com/software/tradeproof",
+  "award": [
+   "Winner, [Y Combinator] Build an Iconic YC Company with AI (1st Place: Guaranteed YC interview  2nd Place: Guaranteed YC Office Hours  3rd Place: Guaranteed YC Office Hours) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "aesthetica",
+  "url": "https://devpost.com/software/aesthetica",
+  "award": [
+   "Winner, [Y Combinator] Build an Iconic YC Company with AI (1st Place: Guaranteed YC interview  2nd Place: Guaranteed YC Office Hours  3rd Place: Guaranteed YC Office Hours) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "HireUp",
+  "url": "https://devpost.com/software/hireright",
+  "award": [
+   "Winner, [Y Combinator] Build an Iconic YC Company with AI (1st Place: Guaranteed YC interview  2nd Place: Guaranteed YC Office Hours  3rd Place: Guaranteed YC Office Hours) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ },
+ {
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "Zeta",
+  "url": "https://devpost.com/software/zeta-jwq9te",
+  "award": [
+   "Winner, [Y Combinator] Build an Iconic YC Company with AI (1st Place: Guaranteed YC interview  2nd Place: Guaranteed YC Office Hours  3rd Place: Guaranteed YC Office Hours) — TreeHacks 2026"
+  ],
+  "subjectOf": [
+   {
+    "@id": "https://treehacks-2026.devpost.com/#event",
+    "name": "TreeHacks 2026",
+    "url": "https://treehacks-2026.devpost.com/"
+   }
+  ]
+ }
+]

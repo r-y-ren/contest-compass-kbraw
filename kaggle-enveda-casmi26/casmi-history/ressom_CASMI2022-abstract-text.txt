@@ -1,0 +1,1 @@
+Method: We use a convolutional neural network (CNN) model to predict compound fingerprints based on MS/MS spectra. The CNN model was trained using more than 680,000 MS/MS spectra representing about 36,000 compounds. The predicted compound fingerprints are applied to rank putative metabolite IDs obtained by searching their precursor mass against compound databases.

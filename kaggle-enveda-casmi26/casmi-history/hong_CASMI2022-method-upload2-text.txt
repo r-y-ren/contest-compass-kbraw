@@ -1,0 +1,121 @@
+                  Tackling CASMI 2022: Solutions from
+                     Mol3DNet and MetaboSLASH
+                             Yuhui Hong1 Sujun Li1 Haixu Tang ∗1
+                     1
+                         Luddy School of Informatics, Computing, and Engineering
+                                Indiana University Bloomington, IN 47408
+
+
+
+                                               Abstract
+          Critical Assessment of Small Molecule Identification (CASMI) in 2022 aims to identify
+      small molecules from the increasing tandem mass (MS/MS) spectrometry database. In the
+      contest, raw LC-accurate mass MS/MS data in both positive and negative mode and a list
+      of unidentified small molecules are provided. A deep learning model, Mol3DNet, is trained
+      to predict MS/MS from molecular 3D conformers. The training data is from the public
+      libraries, including GNPS, NIST20, and MoNA. Then we established a predicted MS/MS
+      library from 216,704 compounds of Human Metabolome Database (HMDB), which contains
+      the spectra in different collision energies and precursor types. With the predicted library,
+      the fast and sensitive searching software, msSLASH [4], is applied to identify compounds
+      with their experimental mass and MS/MS. In the end, the compounds with SMILES can be
+      classified by ClassyFire [1].
+
+
+1     Methods
+1.1    Establish predicted MS/MS library by Mol3DNet
+Mol3DNet is a deep learning model predicting accurate MS/MS from molecular 3D conform-
+ers. The inputs of this model is the SMILES of compounds and other experimental conditions,
+including collision energy and precursor type. The SMILES is convert into 3D conformers by
+Chem.MolFromSmiles() and AllChem.EmbedMolecule() in RDKit library [3], which is then
+encoded into points of set. The spectra is binned into a fix-length vector, and intensities are
+normalized into from 0 to 1. In Mol3DNet, a convolutional operation, MolConv, is designed to
+extract features from conformers. With the sequential MolConv, the 3D compounds are embed-
+ded into a vector in latent space. Then multilayer perceptron (MLP) with residual connections
+decodes the vector to MS/MS. Cosine distance (equation 1) is used as loss function and metrics.
+                                                                         A·B
+                      cosine distance = 1 − cosine similarity = 1 −                                  (1)
+                                                                       ||A||||B||
+where A and B are two spectra vectors.
+   Train Mol3DNet: Mol3DNet is trained on public libraries, including spectra from Global
+Natural Products Social Molecular Networking (GNPS) [5], NIST20 [7], and MassBank of North
+America (MoNA) [2]. We filter out spectra from Higher-energy collisional dissociation (HCD)
+spectra (acquired using the ion trap MS instruments) and the combination of Q-TOF spectra
+(acquired using the quadrupole/time-of-flight MS instruments) and QqQ spectra (acquired using
+the triple-quadrupole MS instruments) as training datasets.
+
+
+                                                   1
+   Establish predicted library: The metabolite structures in sdf format without spectra
+can be downloaded from HMDB [6] database, which are the input of Mol3DNet when inference.
+Because there are tons of experimental conditions, we choose the common ones:
+   • 3 level collision energy: 10 eV, 20 eV, 40 eV
+
+   • 8 precursor types: ‘M+H’, ‘M-H’, ‘M+H-H2O’, ‘M+Na’, ‘M+H-NH3’, ‘M+H-2H2O’, ‘M-
+     H-H2O’, ‘M+Cl’, ‘M+OH’
+To handle the large quantity data, all the SMILES, compound mass, retention time, collision
+energy, precursor type and predicted mass spectra are saved in a series of mgf format files, which
+can be used as a reference library in the searching algorithm.
+
+1.2    Identify compounds by msSLASH
+The msSLASH [4] software implements a fast spectral library searching algorithm based on the
+Locality-Sensitive Hashing (LSH) technique. The reference library and query spectra are first
+converted into bit-string using LSH functions. Then the similarity between the spectra with
+highly similar bit-string can be computed.
+   Search target MS/MS: We first process the raw MS/MS data into mgf format, including
+compound mass and retention time. The codes for msSLASH is available here: https://github.
+com/COL-IU/msSLASH. The setting parameters we used is shown in table 1.2.
+
+                   Setting Parameter Description          Value
+                   Minimize m/z for peaks to consider     10
+                   Fragment precision in Da               0.2
+                   Precursor mass tolerance in Da         2
+                   Peak intensity rescale method          sqrt transformation
+                   Hash functions per hash table          10
+                   Iteration for searching with LSH       200
+
+                               Table 1: The settings of msSLASH.
+
+    The restults of seraching in predicted library is saved in Yuhui CASMI2022 pred.xlsx. In
+addition to the predicted library, we also searching the spectra in assembled public libraries
+including GNPS, NIST20, MoNA, and labeled HMDB. The spectra with max cosine simi-
+larity among libraries is picked as final results. The resutls using second stratefy is save in
+Yuhui CASMI2022 pred and pub.xlsx.
+    Classify compounds: The hierarchical chemical classification of compounds is calculated
+at the website of ClassyFire. The classification results, including kingdom, superclass, class, and
+subclass, are organized in json format. To make the classification in a higher-order we report
+the class as the compound class.
+
+
+References
+[1] Yannick Djoumbou Feunang, Roman Eisner, Craig Knox, Leonid Chepelev, Janna Hastings,
+    Gareth Owen, Eoin Fahy, Christoph Steinbeck, Shankar Subramanian, Evan Bolton, et al.
+    Classyfire: automated chemical classification with a comprehensive, computable taxonomy.
+    Journal of cheminformatics, 8(1):1–20, 2016.
+
+
+
+                                                2
+[2] Hisayuki Horai, Masanori Arita, Shigehiko Kanaya, Yoshito Nihei, Tasuku Ikeda, Kazuhiro
+    Suwa, Yuya Ojima, Kenichi Tanaka, Satoshi Tanaka, Ken Aoshima, et al. Massbank: a public
+    repository for sharing mass spectral data for life sciences. Journal of mass spectrometry,
+    45(7):703–714, 2010.
+[3] Greg Landrum, Paolo Tosco, Brian Kelley, Gedeck Sriniker, and Gedeck.            rdkit/rdkit:
+    2020 03 1 (q1 2020) release. March. https://doi. org, 10, 2020.
+[4] Lei Wang, Kaiyuan Liu, Sujun Li, and Haixu Tang. A fast and memory-efficient spectral li-
+    brary search algorithm using locality-sensitive hashing. Proteomics, 20(21-22):2000002, 2020.
+[5] Mingxun Wang, Jeremy J Carver, Vanessa V Phelan, Laura M Sanchez, Neha Garg, Yao
+    Peng, Don Duy Nguyen, Jeramie Watrous, Clifford A Kapono, Tal Luzzatto-Knaan, et al.
+    Sharing and community curation of mass spectrometry data with global natural products
+    social molecular networking. Nature biotechnology, 34(8):828–837, 2016.
+[6] David S Wishart, AnChi Guo, Eponine Oler, Fei Wang, Afia Anjum, Harrison Peters,
+    Raynard Dizon, Zinat Sayeeda, Siyang Tian, Brian L Lee, et al. Hmdb 5.0: the human
+    metabolome database for 2022. Nucleic acids research, 50(D1):D622–D631, 2022.
+[7] Xiaoyu Yang, Pedatsur Neta, and Stephen E Stein. Extending a tandem mass spectral library
+    to include ms2 spectra of fragment ions produced in-source and msn spectra. Journal of The
+    American Society for Mass Spectrometry, 28(11):2280–2287, 2017.
+
+
+
+
+                                               3
+

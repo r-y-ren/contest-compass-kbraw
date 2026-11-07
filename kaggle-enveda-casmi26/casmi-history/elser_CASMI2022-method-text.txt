@@ -1,0 +1,15 @@
+Mass2smiles: using deep learning for de-novo structure prediction of mass spectra.
+
+Authors: David Elser, Florian Huber and Emmanuel Gaquerel
+
+Modern mass spectrometry-based metabolomics allows the collection of massive amounts of mass spectral information as part of the chemical inventory of biospecimens. Annotation of the resulting MS/MS spectra remains a challenging task that mostly relies on database interrogations, in silico prediction and interpretation of fragmentation schemes and/or expert knowledge-based manual interpretations. A key limitation is that these approaches typically leave a vast proportion of the (bio)chemical space uncovered. Here we report a deep multitask neural network method to predict chemical structures from unknown high-resolution MS/MS spectra. We encode smiles structures in a continuous chemical descriptor space which was previously reported. The network was trained on about 100,000 natural product-derived MS/MS spectra of the GNPS library with addition of the calculated neutral losses for those spectra. Our first non-optimized version accurately predicted 1230 (42%) structures from 2956 validation structures and the overall tanimoto similarity between predicted and corrected structures was of 0.702. Importantly, our deep multitask neural network is extremely fast, about 20 minutes to predict 1000 structures, making it suitable to predict structures for all substances within large metabolomics datasets on regular computers.
+
+Data processing
+
+Data files of positive mode were processed with the Batch Mode of MZMine 2.53 (see Batchscript, except tolerance was set to 5 ppm) and exported for Feature-based molecular networking (FBMN) as .mgf and .csv, resulting in 1435 features. Filtering the .mgf with a custom python script removed features with less than 10 peaks, casmi ids were then matched with a 5 ppm tolerance and a retention time tolerance of 0.1 resulting in 236 features. Structures were then directly predicted from the .mgf file with our docker container in 10 minutes with the command:
+
+docker run -v c:/Users/delser/mass2smiles/:/app  mass2smiles_mso:v3 conda run -n matchms python app/mass2smiles.py casmi_candidates_pos_casmi_id.mgf /app  After removing duplicated features 223 structures were retained for final submission. 
+
+Structures were also directly predicted from the initial .mgf file with our docker container in 17 minutes with the command: docker run -v c:/Users/delser/mass2smiles/:/app  mass2smiles_mso:v3 conda run -n matchms python app/mass2smiles.py CASMI2022_1805.mgf /app 
+
+Resulting in 1068 predicted structures. (Features with less than 10 peaks are automatically removed by our software)

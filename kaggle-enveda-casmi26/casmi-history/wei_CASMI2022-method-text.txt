@@ -1,0 +1,23 @@
+Abstract:
+
+Our team used MS-DIAL to calculate adducts. For formula calculation and SMILES prioritization, we set up one combination of three popular software, including SIRIUS, Metfrag and MSFinder, and developed one network among known and unknown molecular (KU Network) using the spectral similarity. Using these two methods, we predicted the molecular formula and ranked the structure of candidates.
+
+Team information
+
+  Our team was supervised by Dr. Si Wei form School of Environment, Nanjing University. Team members included Yunhao Ke, Kan Xu, Yuxiao Yang, Yingxue Ma, Xiaomei Tan, Chenxi Gao, Jun Liu, Yuqian Li, Mengwen Liu, Dr. Xuebing Wang, Dr. Nanyang Yu, Dr. Si Wei.
+
+Prediction of adduct ions
+
+The adduct ions were predicted by the MS-Dial 4.70 using the raw data file. For positive ions, [M+H]+, [M+Na]+, [M+NH4]+ and [M+K]+ were selected. For negative ions, [M-H]-, [M+FA-H]-, [M+Hac-H]-, [M+Cl]- and [M+Br]- were selected.
+
+Formula calculation and SMILES prioritization
+
+To confirm formula and SMILES, we applied three popular software, Sirius 4.4.29, MetFrag, and MS-Finder. For Sirius, we imported the MS1, MS2, and adduct information. For MetFrag, we imported precursor mass, MS2, and adduct information. For MS-Finder, we imported the MS1, MS2, and adduct information. The candidates were searched in PubChem. To retain the best formula and SMILES, we built a strategy using the weighted voting calculation, and the weight coefficient for Sirius 4.4.29, MetFrag, and MS-Finder were 1.2, 0.8, and 1.0, respectively. The final result is retained in MSKU_LF1.xlsx.
+
+SMILES prioritization with the KU Network
+
+We tried to build the network among known and unknown molecular (KU Network) using the spectral similarity between unknown molecular and known molecular. Then, we used the structure of known molecular to prioritize the candidates using the matrix similarity. The candidates were also searched in PubChem based on the precursor mass and adduct information. The formula was predicted by the top 1 SMILES. The final result is retained in MSKU_LF3.xlsx. If one unknown molecular did not link any known molecular, this formula and structure of unknown molecular were not predicted using this method.
+
+SMILES reprioritization with the KU Network
+
+To optimize the results in LF1.xlsx, we reprioritize the candidates using the KU Network. The candidates were searched in PubChem based on the formula in MSKU_LF1.xlsx. The final result is retained in MSKU_LF2.xlsx. If one unknown molecular did not link any known molecular, this formula and structure of unknown molecular were not predicted using this method.

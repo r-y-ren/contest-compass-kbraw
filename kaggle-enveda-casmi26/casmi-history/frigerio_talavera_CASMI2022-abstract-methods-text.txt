@@ -1,0 +1,80 @@
+            CASMI Challenge – Environmental Cheminformatics group – LCSB, University of Luxembourg
+                                   Begona Talavera Andujar, Gianfranco Frigerio, Emma L. Schymanski
+
+Abstract
+
+Two approaches were followed in order to detect a broader number of chemicals in the context of the
+CASMI 2022 exercise. On the one hand, we used MS-DIAL and all the public spectral libraries available at
+the time we performed the analysis (see methods section for details). Moreover, the peaks were imported
+to MS-FINDER, i.e., when no match in MS-DIAL libraries was found, in silico fragmentation was performed
+with MS-FINDER. On the other hand, patRoon software was employed to perform the same analysis, as
+we noticed in previous studies, that MS-DIAL and patRoon results could be complementary.
+
+For simplicity, we have elaborated two different tables; one containing the results derived from MS-DIAL
++ MS-FINDER software, and the other one containing the results we obtained from patRoon.
+
+Methods
+
+MS-DIAL
+
+The mzML files provided were uploaded to MS-DIAL (version 4.80). For the annotation, the latest MSP
+libraries available were used: in particular, “MSMS-Public-Pos-VS16.msp” and “MSMS-Public-Neg-
+VS15.msp” were implemented for the positive and negative ionization modes, respectively. No peak
+alignment was performed. The parameters used for the data analysis are summarized in Table 1.
+Table 1. Parameters selected for the MS-DIAL data analysis.
+
+                                            Parameter settings MS-DIAL
+                                                   Data collection
+ Parameter                                 Value for analyses in positive   Value for analyses in negative
+ MS 1 tolerance                            0.01 Da                          0.01 Da
+ MS 2 tolerance                            0.025 Da                         0.025 Da
+ Retention time begin                      0 min                            0.5 min
+ Retention time end                        100 min                          10 min
+ MS1 mass range begin                      0 Da                             0 Da
+ MS1 mass range end                        2000 Da                          2000 Da
+ MS/MS mass range begin                    0 Da                             0 Da
+ MS/MS mass range end                      2000 Da                          2000 Da
+ Maximum charged number                    2                                2
+                                                   Peak detection
+ Minimum peak height                       1000 amplitude                   100000 amplitude
+ Mass slice width                          0.05 Da                          0.05 Da
+ Smoothing level                           3 scan                           3 scan
+ Minimum peak width                        5 scan                           5 scan
+                                                MS2 deconvolution
+ Sigma window value                        0.5                              0.5
+ MS/MS abundance cut off                   0 amplitude                      0 amplitude
+                                                    Identification
+ Retention time tolerance                  100 min                          0.5 min
+ Acurate mass tolerance (MS1)              0.01 Da                          0.005 Da
+ Acurate mass tolerance (MS2)              0.05 Da                          0.01 Da
+ Identification score cut off              80%                              80%
+                                                       Adduct
+ Adducts                                   [M+H]+, [M+NH4]+, [M+Na]+,       [M-H], [M-Cl]-, [M-H-H2O]-
+                                           [M+H-H2O]+
+
+
+
+
+                                                                                                             Page 1 of 2
+          CASMI Challenge – Environmental Cheminformatics group – LCSB, University of Luxembourg
+                                 Begona Talavera Andujar, Gianfranco Frigerio, Emma L. Schymanski
+
+patRoon
+
+The provided mzML files were directly uploaded to the software and features were extracted and grouped
+with XCMS3. Then the relevant MS data was extracted using the mzR algorithms. Molecular formulas were
+calculated using GenForm and compound identification was performed with MetFrag (MetFrag2.4.5-CL
+jar file) and the PubChem database. When multiples options were found for a particular m/z of interest,
+the feature with the higher fragScore was selected; if multiple features were tied for the fragScore, the
+generic score was considered.
+
+Even though we report only one annotated compound per feature using the above-mentioned score
+prioritisation system, we also have the full dataset of compounds and we are willing to compare if the
+correct result is still present among them, to try to understand and eventually to improve the score
+system.
+
+
+
+
+                                                                                             Page 2 of 2
+

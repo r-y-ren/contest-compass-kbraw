@@ -1,0 +1,23 @@
+Workflow for Identification of 250 Unknown Analytes for CASMI 2022
+
+Carl Namini and Jonathan Mosley
+
+United States Environmental Protection Agency, Office of Research and Development, Center for Environmental Measurement and Modeling
+
+Abstract
+
+Spectral information was first downloaded as .RAW files. To annotate chemical formula and adduct information, spectral raw data was processed with Compound Discoverer (ThermoFisher Scientific). After compounds were detected, compositions were predicted with the Predict Composition node, and formula and mass were searched for in the ChemSpider database. To exclude any features, they were additionally searched for in the mzCloud online library. The SMILES strings for compound structure were extracted from the ChemSpider search results and manually imported into ClassyFire for compound classification. Lastly, the compound class information, adduct formula and SMILES was manually exported into the template file.
+
+Methods
+
+Raw MS files (.raw, Thermo Fisher Scientific) were processed in Compound Discoverer 3.1 for each ionization mode separately. All workflows included the following Compound Discoverer processing nodes: detect compounds (minimum peak intensity = 1000000), group compounds, search Chemspider (by formula and mass), apply mzLogic (match factor threshold = 30), predict compositions, search mzCloud (identity search = HighChem HighRes), and assign compound annotations with mass tolerance thresholds of 5 ppm where applicable. The compound with the top mzLogic score was used as the putative metabolite annotation. Where no mzLogic structures were proposed, manual Chemspider searches were performed and on-line fragment ion search (FISh) coverage scoring (S/N threshold = 3, mass tolerance = 2.5 mDa, use libraries = TRUE) was used to determine the percentage match between theoretical and experimental fragmentation spectra (Eq. 1). 
+
+[Eq 1] 
+
+For these cases, the compound with the top FISh score was used as the putative metabolite annotation. The SMILES strings for compound structure were extracted from the Chemspider search results (for mzLogic- and FISh-scored compounds) and manually imported into ClassyFire for compound classification. Where no compound class was returned, we designated the compound class as “Not Classified”.
+
+References
+
+[1] Djoumbou Feunang Y, Eisner R, Knox C, Chepelev L, Hastings J, Owen G, Fahy E, Steinbeck C, Subramanian S, Bolton E, Greiner R, and Wishart DS. ClassyFire: Automated Chemical Classification With A Comprehensive, Computable Taxonomy. Journal of Cheminformatics, 2016, 8:61.
+
+DOI: 10.1186/s13321-016-0174-y
