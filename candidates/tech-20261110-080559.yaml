@@ -1,0 +1,379 @@
+- id: gh-wlrudxo_CarMaker-LLM-Agent
+  kind: github
+  name: wlrudxo/CarMaker-LLM-Agent
+  published: '2026-11-04'
+  urls:
+  - https://github.com/wlrudxo/CarMaker-LLM-Agent
+  signal:
+    venue: GitHub
+    stars: 20
+    citations_90d: null
+    runnable: true
+  summary: LLM agent for autonomous driving simulation in IPG CarMaker (trigger monitoring,
+    Claude CLI decisions, vehicle-control commands)
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 创新创业大赛
+- id: arxiv-2611.09791
+  kind: arxiv
+  name: Assessing the Impact of Retrieval-Augmented Generation on Algorithmic Problem-Solving
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09791
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Competitive programming problems pose distinctive challenges for Large
+    Language Models, as they demand not only proficient code generation but also advanced
+    algorithmic reasoning. This study presents a Retrieval-Augmented Generation approach
+    specifically designed to enhance the capacity of Large Language Models to address
+    such problems. Our approach integrates an embedding-based retrieval mechanis
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09658
+  kind: arxiv
+  name: 'Differentially Private GraphRAG: Protecting Relation Connectivity and Semantics'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09658
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Graph Retrieval-Augmented Generation (GraphRAG) connects information across
+    documents through entity relationships to support relational reasoning. However,
+    black-box access to GraphRAG systems can enable adversaries to reconstruct knowledge
+    graphs and recover both structural connectivity between entities and the semantics
+    of their relationships. Existing defenses lack formal privacy guarantees an
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09423
+  kind: arxiv
+  name: 'Agentic AI for Healthcare Claim Denial Analysis: A Policy-Grounded Framework
+    for Privacy Preservation'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09423
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: In the healthcare sector, claim denials impose significant financial and
+    administrative burdens, emphasizing the need for automated and trustworthy decision-support
+    systems. This paper proposes a modular Agentic Artificial Intelligence (AI) framework
+    for healthcare claim denial analysis, integrating specialized agents for denial
+    risk prediction, risk factor identification, diagnosis-procedure-medi
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09414
+  kind: arxiv
+  name: 'Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for
+    Agentic Reasoning'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09414
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Knowledge Graphs (KGs) and Large Language Models (LLMs) represent two approaches
+    for knowledge representation and reasoning over heterogeneous data. Recent research
+    has explored their integration through Graph Retrieval-Augmented Generation (GraphRAG)
+    systems, which use KGs to provide structured context to LLMs. However, existing
+    GraphRAG approaches treat KGs as homogeneous graphs and rely on text
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09298
+  kind: arxiv
+  name: 'Towards an Autonomous AI Steward for Large-Scale Physics Experiments: Integrating
+    Causal Diagnostics, RAG, and Conformal Prediction'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09298
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: 'Long-term particle physics experiments face critical operational challenges:
+    monitoring non-stationary machine data streams and preserving tacit expert knowledge.
+    We present the "Helmholtz Co-Pilot," a hybrid Multi-Agent System (MAS) acting
+    as an autonomous experiment steward. The system can be triggered interactively
+    by human operators or autonomously by an asynchronous causal diagnostics engine '
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09232
+  kind: arxiv
+  name: RAG-Enhanced LLMs for Interactive Explainability in Clinical Decision Support
+    Systems
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09232
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Artificial Intelligence (AI) is increasingly embedded in high-risks decision-making
+    systems across domains such as healthcare, finance, and the judicial system. As
+    reliance on predictive models grows, so does the demand for Explainable AI (XAI)
+    to ensure transparency, trust, and interpretability. However, existing XAI approaches
+    often fail to present explanations in a format accessible to domain e
+  suggested_fields:
+  - retrieval augmented generation
+  directions:
+  - 创新创业大赛
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09176
+  kind: arxiv
+  name: 'TailDART: Compute-Efficient Foundation Models for Financial Time-Series Forecasting'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09176
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Although time-series foundation models (TSFMs) achieve strong zero-shot
+    transferability across high-information-density physical systems, applying overparameterized
+    TSFMs to quantitative finance is fundamentally constrained by low signal-to-noise
+    ratios, non-stationarity, and prohibitive autoregressive decoding latency. To
+    reconcile representation learning with institutional operational constraint
+  suggested_fields:
+  - time series foundation model
+  directions:
+  - 数模与时序预测
+- id: arxiv-2611.08568
+  kind: arxiv
+  name: Personalized health coaching via coachable health age and counterfactual wearable
+    trajectories
+  published: '2026-11-05'
+  urls:
+  - https://arxiv.org/abs/2611.08568
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Personalized health coaching requires moving beyond retrospective wearable
+    summaries toward quantitative, actionable behavioral prescriptions. We introduce
+    Coachable Health Age (CHA), an interpretable health-age metric built from modifiable
+    physiological and behavioral signals passively captured by consumer wearables.
+    Across the WEAR-ME (N=2,780), All of Us (N=22,748), and longitudinal Fitbit (N=1
+  suggested_fields:
+  - time series foundation model
+  directions:
+  - 数模与时序预测
+- id: arxiv-2611.09768
+  kind: arxiv
+  name: 'Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic
+    Effects in LLM Social-Deduction Agents'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09768
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: 'Large language model (LLM) agents coordinate through conversation, and
+    the same message can be phrased in simpler or more complex language, bluntly or
+    politely. We test whether such differences change how other agents judge and act,
+    using the LURK Werewolf framework, which separates each utterance''s speech-act
+    predicate from its natural-language realization. We rewrite only the realization,
+    check '
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09721
+  kind: arxiv
+  name: 'MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09721
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: LLM agents benefit from using memory systems to improve performance on
+    long-horizon, multi-session tasks. However, memory introduces a critical attack
+    surface. Malicious instructions encountered in one session may be stored and propagated
+    through memory before being retrieved and acted upon in later sessions. Because
+    memory systems differ in how they process and retrieve information, the downstrea
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09264
+  kind: arxiv
+  name: 'Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI
+    Agents?'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09264
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: LLM-based agents increasingly automate business and consumer tasks but
+    are slow and expensive. Decision models, a new class that chooses among options
+    without generating text, are far faster and less costly. Developers call them
+    "System One models," referencing dual process theory. We ask whether such models
+    can be steered by digital nudges online and whether, as the theory predicts, automatic
+    nud
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09113
+  kind: arxiv
+  name: 'Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step
+    Tool Use'
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09113
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: 'LLM agents can exceed their authorization boundaries while pursuing user
+    goals without an adversary. We formalize this phenomenon as authorization drift
+    across data, tool, scope, and time, and introduce the Authorization Drift Benchmark
+    (ADB): 648 samples across seven domains, each pairing a sufficient compliant path
+    with an attractive unauthorized shortcut. To ensure executable tasks, tempting
+    sh'
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.09088
+  kind: arxiv
+  name: When Routine Operations Break Architectural Pattern Relationships in LLM Agent
+    Harnesses
+  published: '2026-11-06'
+  urls:
+  - https://arxiv.org/abs/2611.09088
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: LLM agent harnesses distribute tool mediation, state management and safety
+    guardrails across native services, independently written plugins and configuration.
+    Routine operations can change the runtime order or retained state that architectural
+    pattern relationships require, without any code change. We study five relationships
+    associated with the Guardrail Enforcement Point, Autonomy Controller and
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.08768
+  kind: arxiv
+  name: 'Conflux: Preventing Privilege Escalation with Principal Contexts and System-Level
+    Evaluation'
+  published: '2026-11-05'
+  urls:
+  - https://arxiv.org/abs/2611.08768
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: 'LLM agents combine information from multiple principals while acting externally.
+    We formalise privilege escalation (PE) as the system-level security objective:
+    an action may proceed only if every principal that influenced it would allow it.
+    Model-level defences remain probabilistic, so enforcement must sit outside model
+    judgement. We present Conflux, a principal-context defence. Its kernel, ITES, '
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.08644
+  kind: arxiv
+  name: 'Decision Context: Persistent Behavioral Learning for AI Agents'
+  published: '2026-11-05'
+  urls:
+  - https://arxiv.org/abs/2611.08644
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: "LLM agents do not learn from corrections across sessions. A user fixes\
+    \ the same mistake at the start of every conversation. Existing agent memory systems\
+    \ primarily handle facts, such as preferences, entities, and conversational history,\
+    \ rather than procedural knowledge.\n  We present Forge Decision Context (forge_dc),\
+    \ a system that captures behavioral signals from human corrections and self-assesse"
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.08613
+  kind: arxiv
+  name: 'NormGym: Evaluating Normative Competence through Social Interaction'
+  published: '2026-11-05'
+  urls:
+  - https://arxiv.org/abs/2611.08613
+  signal:
+    venue: arXiv
+    citations_90d: null
+    stars: null
+    runnable: false
+  summary: Normative competence, the ability to infer socially enforced expectations
+    from interaction and adjust behavior accordingly, is essential for agents operating
+    in unfamiliar human communities. Yet existing evaluations largely test whether
+    agents can recognize or apply norms they may already know, rather than whether
+    they can acquire previously unknown norms from social interaction. We introduce
+    Norm
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
+- id: arxiv-2611.08175
+  kind: hf-paper
+  name: 'PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?'
+  published: '2026-11-05'
+  urls:
+  - https://huggingface.co/papers/2611.08175
+  - https://arxiv.org/abs/2611.08175
+  signal:
+    venue: HuggingFace Papers
+    upvotes: 25
+    stars: null
+    citations_90d: null
+    runnable: false
+  summary: Automating printed circuit board (PCB) routing requires coordinating board-level
+    connectivity decisions with geometric execution under strict design rules. Although
+    recent agents can interact with native routing tools, reliable routing on complex
+    boards remains challenging. We present PCBRouteAgent, a multimodal PCB routing
+    agent inspired by how human engineers coordinate global strategy with loca
+  suggested_fields:
+  - LLM agents
+  directions:
+  - 黑客松与数据竞赛
